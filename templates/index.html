@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Skin Disease Detector</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            background: linear-gradient(to right,#141e30,#243b55);
+            color:white;
+            text-align:center;
+            padding-top:100px;
+        }
+
+        .box{
+            background:white;
+            color:black;
+            width:400px;
+            margin:auto;
+            padding:30px;
+            border-radius:15px;
+        }
+
+        button{
+            padding:10px 20px;
+            background:#243b55;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>AI Skin Disease Detector</h1>
+
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+
+            <input type="file" name="file"><br><br>
+
+            <button type="submit">
+                Predict Disease
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Prediction Result</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            background: linear-gradient(to right,#141e30,#243b55);
+            color:white;
+            text-align:center;
+            padding-top:50px;
+        }
+
+        .box{
+            background:white;
+            color:black;
+            width:500px;
+            margin:auto;
+            padding:30px;
+            border-radius:15px;
+        }
+
+        img{
+            width:250px;
+            border-radius:10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+
+        <h1>Prediction Result</h1>
+
+        <img src="{{ image_path }}">
+
+        <h2>Disease: {{ prediction }}</h2>
+
+        <h3>Confidence: {{ confidence }}%</h3>
+
+    </div>
+
+</body>
+
+</html>
